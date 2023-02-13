@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora IMC</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="./js/script.js" defer type="module"></script>
+
+</head>
+<body>
+
+  <div class="alert-error">
+    <p>Digite somente números</p>
+  </div>
+  
+  <div class="container">
+    <main class="card">
+      <form action="">
+        <h1 class="title">Cálculo IMC</h1>
+        
+        <div class="input-wrapper">
+          <label for="weight">Peso (Kg)</label>
+          <input id="weight" 
+                 type="text"
+                 placeholder="60"/>
+        </div>
+
+        <div class="input-wrapper">
+          <label for="height">Altura (cm)</label>
+          <input id="height" 
+                 type="text"
+                 placeholder="165"/>
+        </div>
+
+        <button type="submit">
+          Calcular IMC
+          <img src="./assets/arrow.svg" alt="seta">
+        </button>
+      </form>
+    </main>
+  </div>
+
+  <div class="modal-wrapper">
+    <div class="modal card">
+      <h2 class="title">
+        <button class="close">
+          <img src="./assets/close.svg" 
+               alt="icone de X para fechar o popup">
+        </button>
+
+        <span>Seu IMC é de...</span>
+      </h2>
+
+      <table>
+        <caption>Tabela de interpretação do IMC</caption>
+        
+        <thead>
+          <tr>
+            <th>IMC</th>
+            <th>Classificação</th>
+            <th>Obesidade (Grau)</th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>menor que 18,5</td>
+            <td>magreza</td>
+            <td>0</td>
+          </tr>
+  
+          <tr>
+            <td>menor que 18,5 e 24,9</td>
+            <td>normal</td>
+            <td>0</td>
+          </tr>
+  
+          <tr>
+            <td>menor que 25,0 e 29,9</td>
+            <td>sobrepeso</td>
+            <td>l</td>
+          </tr>
+  
+          <tr>
+            <td>menor que 30,0 e 39,9</td>
+            <td>obesidade</td>
+            <td>ll</td>
+          </tr>
+  
+          <tr>
+            <td>maior que 40,0</td>
+            <td>obesidade grave</td>
+            <td>lll</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
