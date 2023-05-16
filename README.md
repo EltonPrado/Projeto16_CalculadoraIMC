@@ -32,7 +32,7 @@ informações básicas
 
 Quer conferir seu IMC? 
 
-[Visite o projeto online](https://eltonprado.github.io/Projeto12_CalculadoraIMC/)
+[Visite o projeto online](https://eltonprado.github.io/Projeto16_CalculadoraIMC/)
 
 <br>
 
